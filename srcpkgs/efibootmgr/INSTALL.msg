@@ -4,7 +4,7 @@ Enable this by editing /etc/default/efibootmgr-kernel-hook.
 
 The efi variables need to be accessible in order for this to work, so
 add this line to your fstab and reboot or mount manually:
-  efivarfs /sys/firmware/efi/efivars efivarfs 0 0
+  efivarfs /sys/firmware/efi/efivars efivarfs defaults 0 0
 -----------------------------------------------------------------------
 Kernel cmd options can be configured in /etc/default/efibootmgr-kernel-hook,
 but you always have to reconfigure the kernel:
